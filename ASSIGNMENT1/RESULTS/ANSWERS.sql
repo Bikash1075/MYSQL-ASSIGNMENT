@@ -26,7 +26,7 @@ WHERE CITY= 'LONDON' OR CITY = 'PARIS';
 
 
 # Display the number of orders taken by each Salesperson and their date of orders.
-SELECT S.SNAME,O.ODATE,COUNT(O.ODATE)
+SELECT S.SNAME,O.ODATE,COUNT(O.ODATE) AS NO_OF_ORDERS
 FROM SALESPEOPLE S
 LEFT JOIN ORDERS O
 ON S.SNUM = O.SNUM
